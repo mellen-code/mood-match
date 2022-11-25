@@ -21,6 +21,10 @@ const cherMoods = {
     'blue': {
         'image': 'This will be a blue image',
         'imageCaption': 'CC credit goes here'
+    },
+    'default': {
+        'image': 'This will be a default image',
+        'imageCaption': 'CC credit goes here'
     }
 }
 
