@@ -33,7 +33,7 @@ MongoClient.connect(dbConnectionString)
         catch{(error => console.error(error))}
     })
 
-    app.get('/api/:mood', (req, res) => {
+    app.get('/:mood', (req, res) => {
         const userMood = req.params.mood.toLowerCase();
 
         collection.find({name: userMood}.toArray())
