@@ -34,9 +34,9 @@ MongoClient.connect(dbConnectionString)
     })
 
     app.get('/api/:mood', (req, res) => {
-        const mood = req.params.mood.toLowerCase();
+        const userMood = req.params.mood.toLowerCase();
 
-        collection.find({name: mood}.toArray())
+        collection.find({name: userMood}.toArray())
         
         .then(results => {
             console.log(results)

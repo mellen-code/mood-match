@@ -5,8 +5,8 @@ async function findMood() {
     const mood = document.querySelector('input').value
 
     try {
-        const response = await fetch(`https://mood-match.up.railway.app/${mood}`)
-        const data = await response.json()
+        const res = await fetch(`https://mood-match.up.railway.app/api/${mood}`)
+        const data = await res.json()
 
         console.log(data)
 
